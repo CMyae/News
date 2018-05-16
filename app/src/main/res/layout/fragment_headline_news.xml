@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    tools:context="com.chan.samples.news.ui.main.HeadlineNewsFragment">
+
+    <TextView
+        android:id="@+id/tv_news_headline_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_news_header"
+        tools:text="@string/text1"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:minLines="3"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="3 days ago"
+        android:layout_below="@id/tv_news_headline_title"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="The Verge"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_news_headline_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date">
+
+        <ImageView
+            android:id="@+id/imgNewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress_bar"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/light_gray"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

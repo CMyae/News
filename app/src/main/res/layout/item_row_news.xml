@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tvBreakingNew"
+        android:text="@string/breaking_news"
+        style="@style/Small_Header_TextView"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <com.chan.samples.news.ui.views.ExpandViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tools:listitem="@layout/fragment_headline_news"
+        />
+
+    <TextView
+        android:id="@+id/tvHeadlineNewsSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See More >"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvLatestNews"
+        android:text="@string/latest_news"
+        style="@style/Small_Header_TextView"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.chan.samples.news.ui.views.CustomGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="20dp"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        tools:listitem="@layout/item_row_grid_news"
+        />
+
+    <TextView
+        android:id="@+id/tvLatestNewsSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See More >"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

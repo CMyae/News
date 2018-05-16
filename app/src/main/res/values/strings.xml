@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">News</string>
+
+    <string name="facebook_app_id">186954898721189</string>
+    <string name="fb_login_protocol_scheme">fb186954898721189</string>
+
+    <string name="fb_login">Log in With Facebook</string>
+    <string name="fb_logout">Sign Out</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="breaking_news">Breaking News</string>
+    <string name="latest_news">Latest News</string>
+    <string name="message_error_loading">Try again later</string>
+    <string name="message_error_connection">Connection lost</string>
+    <string name="message_no_articles">No articles match</string>
+    <string name="message_fb_login">Logging in with facebook</string>
+    <string name="message_no_item_selected">Follow at least one item</string>
+    <string name="message_login">Login to bookmark</string>
+    <string name="message_edited">Successfully updated bookmarks</string>
+
+    <string name="menu_close">Close</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_open_with">Open With</string>
+
+    <!-- dummy text  -->
+    <string name="text1">This team won this team in basketet match with 3&#8211;0 goals</string>
+    <string name="text2">
+        This team of this country won this team in volley ball match with 1-0 goals.
+        This team of this country won this team in volley ball match with 1-0 goals
+        This team of this country won this team in volley ball match with 1-0 goals
+    </string>
+
+
+</resources>

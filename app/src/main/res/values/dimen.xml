@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_padding">4dp</dimen>
+    <dimen name="large_news_header">20sp</dimen>
+    <dimen name="small_news_header">16sp</dimen>
+</resources>
